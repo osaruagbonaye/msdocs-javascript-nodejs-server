@@ -22,6 +22,7 @@ jobs:
           node-version: '16.x'
 
       - name: npm install, build, and test
+        working-directory: ./2-Deploy-basic-app-to-azure
         run: |
           npm install
           npm run build --if-present
