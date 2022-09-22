@@ -22,7 +22,7 @@ jobs:
           node-version: '16.x'
 
       - name: npm install, build, and test
-        working-directory: ./2-Deploy-basic-app-to-azure
+        working-directory: ./5-Add-blob-storage
         run: |
           npm install
           npm run build --if-present
@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: ./2-Deploy-basic-app-to-azure
+          path: ./5-Add-blob-storage
 
   deploy:
     runs-on: ubuntu-latest
