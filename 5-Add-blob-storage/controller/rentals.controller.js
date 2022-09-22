@@ -20,6 +20,7 @@ export const viewAllRentals = async (req, res) => {
 // List API
 export const apiAllRentals = async (req, res) => {
   const rentals = await getRentals();
+  console.log(rentals);
   res.json(rentals);
 };
 // Delete view
